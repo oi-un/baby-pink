@@ -1,0 +1,181 @@
+main {
+  margin-top: 10px;
+  @include between();
+
+  article.leftContent {
+    width: 400px;
+    border-right: 1px solid #eee;
+
+    padding: 10px 10px 10px 0;
+    margin-right: 10px;
+  }
+
+  article.rightContent {
+    width: 100%;
+  }
+}
+
+article.leftContent {
+  h3.title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  section.loginBox {
+    width: 100%;
+    border: 2px solid #e6e6e6;
+    border-radius: 15px;
+    padding: 15px;
+
+    form {
+      ul.loginInput input {
+        width: 100%;
+        margin-bottom: 5px;
+        border: 1px solid #cfcfcf;
+        padding: 10px;
+      }
+
+      button {
+        width: 100%;
+        border: none;
+
+        padding: 10px;
+        font-size: 1rem;
+        font-weight: bold;
+
+        background-color: pink;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: rgba(255, 192, 203, 0.212);
+        }
+      }
+    }
+    ul.findAccount {
+      margin: 10px;
+      @include between();
+
+      li {
+        font-size: 0.9rem;
+        padding: 0 7px;
+
+        &:nth-child(2) {
+          position: relative;
+          &::before {
+            content: '';
+            width: 1px;
+            height: 10px;
+            background-color: #cfcfcf;
+
+            position: absolute;
+            top: 40%;
+            left: -7px;
+          }
+
+          &::after {
+            content: '';
+            width: 1px;
+            height: 10px;
+            background-color: #cfcfcf;
+
+            position: absolute;
+            top: 40%;
+            right: -7px;
+          }
+        }
+      }
+    }
+  }
+
+  section.userInfo {
+    width: 100%;
+    border: 2px solid #e6e6e6;
+    border-radius: 15px;
+    padding: 15px;
+
+    div.userInfo {
+      @include between();
+
+      span.userImg {
+        width: 25%;
+        img {
+          width: 100%;
+        }
+      }
+
+      ul {
+        width: 68%;
+        display: flex;
+        justify-content: end;
+
+        li.logout {
+          margin-left: 10px;
+
+          a {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+
+    ul.menu {
+      border-top: 1px solid #cfcfcf;
+      margin-top: 10px;
+      display: flex;
+
+      li {
+        width: calc(100% / 4);
+        padding: 10px;
+        text-align: center;
+
+        a {
+          display: block;
+          width: 100%;
+        }
+
+        &:hover {
+          background-color: $pointColor;
+        }
+      }
+    }
+  }
+
+  section.category {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    border-top: 2px solid #cfcfcf;
+    border-bottom: 2px solid #cfcfcf;
+
+    button.title {
+      cursor: pointer;
+      display: block;
+      font-size: 0.9rem;
+      background-color: transparent;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #cfcfcf;
+      padding: 7px 5px;
+
+      @include between();
+    }
+  }
+}
+
+article.rightContent {
+  section.slideShow {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1190px) {
+  article.leftContent {
+    display: none;
+  }
+}

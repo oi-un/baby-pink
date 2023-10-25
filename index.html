@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INDEX</title>
+    <link rel="stylesheet" href="/style/common.css" />
+    <link rel="stylesheet" href="/style/main.css" />
+    <!--아이콘-->
+    <script src="https://kit.fontawesome.com/a923b8b28f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="logo"><a href="">Baby Pink</a></h1>
+        <ul class="sarchMenu">
+          <li class="searchInput">
+            <span class="incon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input type="text" placeholder="키워드를 입력하세요." />
+          </li>
+          <li class="slideMenu">
+            <label for="slideMenu">
+              <i class="fa-solid fa-bars"></i>
+            </label>
+          </li>
+        </ul>
+      </header>
+      <input type="checkbox" id="slideMenu" />
+      <section class="slideMenu">
+        <label for="slideMenu">
+          <i class="fa-solid fa-xmark"></i>
+        </label>
+
+        <ul>
+          <li><a href="login.html">Log In</a></li>
+          <li><a href="">Join</a></li>
+          <li><a href="">My Page</a></li>
+        </ul>
+      </section>
+
+      <nav>
+        <ul class="mainMenu">
+          <li>
+            <a href="">Home <span class="hoverBar acting"></span></a>
+          </li>
+          <li>
+            <a href="">Menu 1 <span class="hoverBar acting"></span></a>
+          </li>
+          <li>
+            <a href="">Menu 2 <span class="hoverBar acting"></span></a>
+          </li>
+          <li>
+            <a href="">Menu 3 <span class="hoverBar acting"></span></a>
+          </li>
+        </ul>
+      </nav>
+
+      <main>
+        <article class="leftContent">
+          <!-- 로그인 박스 -->
+          <section class="loginBox">
+            <h3 class="title">LOGIN</h3>
+            <form action="" name="loginFrm">
+              <ul class="loginInput">
+                <li><input type="text" name="id" placeholder="ID" /></li>
+                <li><input type="password" name="pwd" placeholder="PASSWORD" /></li>
+              </ul>
+              <button type="button">Log In</button>
+            </form>
+
+            <ul class="findAccount">
+              <li><a href="">Find ID</a></li>
+              <li><a href="">Find Password</a></li>
+              <li><a href="">Join</a></li>
+            </ul>
+          </section>
+
+          <!-- 로그인 되어있는 박스 -->
+          <!-- <section class="userInfo">
+            <div class="userInfo">
+              <span class="userImg">
+                <img
+                  src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA2MTBfMTY1%2FMDAxNTkxNzQ2ODcyOTI2.Yw5WjjU3IuItPtqbegrIBJr3TSDMd_OPhQ2Nw-0-0ksg.8WgVjtB0fy0RCv0XhhUOOWt90Kz_394Zzb6xPjG6I8gg.PNG.lamute%2Fuser.png&type=sc960_832"
+                  alt=""
+                />
+              </span>
+  
+              <ul>
+                <li><a href="">사용자 님</a></li>
+                <li class="logout">
+                  <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+                </li>
+              </ul>
+            </div>
+  
+            <ul class="menu">
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-file-pen"></i>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-regular fa-rectangle-list"></i>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-bell"></i>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-user-gear"></i>
+                </a>
+              </li>
+            </ul>
+          </section> -->
+
+          <section class="category">
+            <button class="title">
+              Category 1
+              <span><i class="fa-solid fa-caret-down"></i></span>
+            </button>
+            <button class="title">
+              Category 2
+              <span><i class="fa-solid fa-caret-down"></i></span>
+            </button>
+            <button class="title">
+              Category 3
+              <span><i class="fa-solid fa-caret-down"></i></span>
+            </button>
+          </section>
+        </article>
+
+        <article class="rightContent">
+          <section class="slideShow">
+            <a href=""
+              ><img
+                src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA1MTlfMTk5%2FMDAxNjg0NDc3ODEyNDI2._PxeQk8NDj3xmFDIG2W09ebwmNeGYoOKGbpa06ejgYsg.c6SqCBOkWwd7zazioRHXGvgSPvX1uXqQObxyTx6hYM4g.JPEG.swissfriends%2FST_3x2_Stans-Pilate_64537.jpg&type=sc960_832"
+                alt=""
+              />
+            </a>
+          </section>
+        </article>
+      </main>
+    </div>
+
+    <footer>
+      <p>
+        &copy;copyright Choi Yunji <br />
+        2023.10.24
+      </p>
+    </footer>
+  </body>
+</html>
